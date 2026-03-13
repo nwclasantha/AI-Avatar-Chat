@@ -1,5 +1,7 @@
 # AI Avatar Chat
 
+https://github.com/user-attachments/assets/e71a46c4-7090-4557-907c-229fc51c92be
+
 This documentation details a **fully local AI software** designed to create and interact with **personalized digital avatars**. By integrating several specialized engines, the program allows users to generate a **lip-synced video clone** that mimics their appearance and voice. The system utilizes **Ollama** for conversational intelligence and **MuseTalk** for realistic facial animation, ensuring the experience remains private and free of cloud fees. Users can input a single photo and an optional audio sample to build a **custom character** capable of responding to both text and speech. Optimized for consumer hardware with at least **6GB of VRAM**, the project provides a comprehensive guide for installation, resource management, and fine-tuning the avatar’s behavior. Ultimately, the repository serves as a technical blueprint for running a **real-time virtual assistant** entirely on a personal computer.
 
 <img width="1185" height="633" alt="2" src="https://github.com/user-attachments/assets/6736a5bc-5aee-4adf-aaba-2b14599efd76" />
@@ -22,6 +24,8 @@ Designed for **6GB VRAM** GPUs. Ollama runs entirely on CPU/RAM so MuseTalk has 
 
 ## Features
 
+<img width="1166" height="612" alt="image" src="https://github.com/user-attachments/assets/c3e0918a-f4f6-4d04-b740-6714bef511a3" />
+
 - **Text or voice input** — type a message or speak into your microphone
 - **AI personality** — describe who the avatar should act as, and it stays in character
 - **Lip-synced video output** — the avatar's mouth moves naturally with the spoken response
@@ -30,6 +34,8 @@ Designed for **6GB VRAM** GPUs. Ollama runs entirely on CPU/RAM so MuseTalk has 
 - **Fully local and free** — no cloud APIs, no subscriptions, everything runs on your machine
 
 ## Requirements
+
+<img width="1162" height="620" alt="image" src="https://github.com/user-attachments/assets/c060ac3f-8173-4293-afb5-ea21345429af" />
 
 - **OS**: Windows 10/11 (Linux also supported)
 - **GPU**: NVIDIA with 6GB+ VRAM (RTX 3060 or better recommended)
@@ -119,7 +125,11 @@ mim install "mmpose==1.1.0"
 
 ## Usage
 
+<img width="1202" height="657" alt="image" src="https://github.com/user-attachments/assets/36bd3e32-cdb7-443e-b9de-e58a88c288bf" />
+
 ### Start the App
+
+<img width="1217" height="668" alt="image" src="https://github.com/user-attachments/assets/a67eac9a-f8f8-44e3-9260-e9e9d1899131" />
 
 Make sure Ollama is running (`ollama serve`), then:
 
@@ -130,6 +140,8 @@ python avatar_chat.py --use_float16
 Open http://127.0.0.1:7861 in your browser.
 
 ### Command-Line Options
+
+<img width="1201" height="661" alt="image" src="https://github.com/user-attachments/assets/a9f69820-a403-49b5-b041-519f831b0ea5" />
 
 | Flag | Description |
 |------|-------------|
@@ -169,6 +181,8 @@ Open http://127.0.0.1:7861 in your browser.
 
 The system uses five engine classes orchestrated by `AvatarChat`:
 
+<img width="1152" height="621" alt="image" src="https://github.com/user-attachments/assets/94de4270-e62c-4fa6-99cb-74ff54aefd87" />
+
 ```
 avatar_chat.py
   STTEngine     — Whisper speech-to-text (lazy-loaded)
@@ -189,6 +203,8 @@ With only 6GB VRAM, models are loaded/unloaded sequentially:
 4. **Ollama** runs entirely on CPU using system RAM (~8GB RAM for 8B model)
 
 ## Original MuseTalk
+
+<img width="1172" height="628" alt="image" src="https://github.com/user-attachments/assets/dba956e4-208a-4e16-bd77-bef0fb9c3a9b" />
 
 This project extends [MuseTalk](https://github.com/TMElyralab/MuseTalk), a real-time high-fidelity lip-syncing model by Lyra Lab (Tencent Music Entertainment).
 
