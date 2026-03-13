@@ -2,6 +2,8 @@
 
 This documentation details a **fully local AI software** designed to create and interact with **personalized digital avatars**. By integrating several specialized engines, the program allows users to generate a **lip-synced video clone** that mimics their appearance and voice. The system utilizes **Ollama** for conversational intelligence and **MuseTalk** for realistic facial animation, ensuring the experience remains private and free of cloud fees. Users can input a single photo and an optional audio sample to build a **custom character** capable of responding to both text and speech. Optimized for consumer hardware with at least **6GB of VRAM**, the project provides a comprehensive guide for installation, resource management, and fine-tuning the avatar’s behavior. Ultimately, the repository serves as a technical blueprint for running a **real-time virtual assistant** entirely on a personal computer.
 
+<img width="1185" height="633" alt="2" src="https://github.com/user-attachments/assets/6736a5bc-5aee-4adf-aaba-2b14599efd76" />
+
 ## How It Works
 
 ```
